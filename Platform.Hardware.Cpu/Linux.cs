@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace NickStrupat
+#pragma warning disable IDE1006 // Naming Styles
+
+namespace Platform.Hardware.Cpu
 {
     internal static class Linux
     {
-        public static Int32 GetSize() => (Int32) sysconf(_SC_LEVEL1_DCACHE_LINESIZE);
+        public static int GetSize() => (int)sysconf(_SC_LEVEL1_DCACHE_LINESIZE);
 
         [DllImport("libc")]
-        private static extern long sysconf(int name);
+        private static extern Int64 sysconf(Int32 name);
 
         private const Int32 _SC_LEVEL1_DCACHE_LINESIZE = 190;
     }

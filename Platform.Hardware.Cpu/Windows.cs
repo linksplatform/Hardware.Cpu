@@ -2,20 +2,24 @@
 using System.Linq;
 using System.Runtime.InteropServices;
 
-namespace NickStrupat
+#pragma warning disable 0649
+#pragma warning disable IDE0044 // Add readonly modifier
+
+namespace Platform.Hardware.Cpu
 {
     internal static class Windows
     {
-        public static Int32 GetSize()
+        public static int GetSize()
         {
             var info = ManagedGetLogicalProcessorInformation();
             if (info == null)
-                throw new Exception("Could not retrieve the cache line size.");
+            {
+                throw new InvalidOperationException("Could not retrieve the cache line size.");
+            }
             return info.First(x => x.Relationship == LOGICAL_PROCESSOR_RELATIONSHIP.RelationCache).ProcessorInformation.Cache.LineSize;
         }
 
         // http://stackoverflow.com/a/6972620/232574
-
         [StructLayout(LayoutKind.Sequential)]
         struct PROCESSORCORE
         {
@@ -39,10 +43,10 @@ namespace NickStrupat
         [StructLayout(LayoutKind.Sequential)]
         struct CACHE_DESCRIPTOR
         {
-            public byte Level;
-            public byte Associativity;
-            public ushort LineSize;
-            public uint Size;
+            public Byte Level;
+            public Byte Associativity;
+            public UInt16 LineSize;
+            public UInt32 Size;
             public PROCESSOR_CACHE_TYPE Type;
         }
 
@@ -73,44 +77,44 @@ namespace NickStrupat
 
         private struct SYSTEM_LOGICAL_PROCESSOR_INFORMATION
         {
-#pragma warning disable 0649
             public UIntPtr ProcessorMask;
             public LOGICAL_PROCESSOR_RELATIONSHIP Relationship;
             public SYSTEM_LOGICAL_PROCESSOR_INFORMATION_UNION ProcessorInformation;
-#pragma warning restore 0649
         }
 
         [DllImport(@"kernel32.dll", SetLastError = true)]
-        private static extern bool GetLogicalProcessorInformation(IntPtr Buffer, ref uint ReturnLength);
+        private static extern bool GetLogicalProcessorInformation(IntPtr Buffer, ref UInt32 ReturnLength);
 
         private const int ERROR_INSUFFICIENT_BUFFER = 122;
 
         private static SYSTEM_LOGICAL_PROCESSOR_INFORMATION[] ManagedGetLogicalProcessorInformation()
         {
-            uint ReturnLength = 0;
+            var ReturnLength = 0u;
             GetLogicalProcessorInformation(IntPtr.Zero, ref ReturnLength);
             if (Marshal.GetLastWin32Error() != ERROR_INSUFFICIENT_BUFFER)
+            {
                 return null;
-            IntPtr Ptr = Marshal.AllocHGlobal((int)ReturnLength);
+            }
+            var pointer = Marshal.AllocHGlobal((int)ReturnLength);
             try
             {
-                if (GetLogicalProcessorInformation(Ptr, ref ReturnLength))
+                if (GetLogicalProcessorInformation(pointer, ref ReturnLength))
                 {
-                    int size = Marshal.SizeOf<SYSTEM_LOGICAL_PROCESSOR_INFORMATION>();
-                    int len = (int)ReturnLength / size;
-                    SYSTEM_LOGICAL_PROCESSOR_INFORMATION[] Buffer = new SYSTEM_LOGICAL_PROCESSOR_INFORMATION[len];
-                    IntPtr Item = Ptr;
-                    for (int i = 0; i < len; i++)
+                    var size = Marshal.SizeOf<SYSTEM_LOGICAL_PROCESSOR_INFORMATION>();
+                    var length = (int)ReturnLength / size;
+                    var buffer = new SYSTEM_LOGICAL_PROCESSOR_INFORMATION[length];
+                    var itemPointer = pointer;
+                    for (int i = 0; i < length; i++)
                     {
-                        Buffer[i] = Marshal.PtrToStructure<SYSTEM_LOGICAL_PROCESSOR_INFORMATION>(Item);
-                        Item += size;
+                        buffer[i] = Marshal.PtrToStructure<SYSTEM_LOGICAL_PROCESSOR_INFORMATION>(itemPointer);
+                        itemPointer += size;
                     }
-                    return Buffer;
+                    return buffer;
                 }
             }
             finally
             {
-                Marshal.FreeHGlobal(Ptr);
+                Marshal.FreeHGlobal(pointer);
             }
             return null;
         }
