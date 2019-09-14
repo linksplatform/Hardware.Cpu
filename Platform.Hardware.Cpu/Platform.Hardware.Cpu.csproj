@@ -1,15 +1,36 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.6</TargetFramework>
-    <PackageId>CacheLine.Size</PackageId>
-    <PackageVersion>1.0.1</PackageVersion>
-    <Authors>Nick Strupat</Authors>
-    <Description>A cross-platform .NET Standard 1.6 library to get the cache line size of the processor, in bytes. Windows, Linux, and macOS supported.</Description>
-    <PackageProjectUrl>https://github.com/NickStrupat/CacheLineSize.NET</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/NickStrupat/CacheLineSize.NET/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageTags>cache-line-size cacheline false-sharing concurrency</PackageTags>
+    <Description>LinksPlatform's Platform.Hardware.Cpu Class Library</Description>
+    <Copyright>Konstantin Diachenko</Copyright>
+    <AssemblyTitle>Platform.Hardware.Cpu</AssemblyTitle>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <Authors>Nick Strupat;Konstantin Diachenko</Authors>
+    <TargetFrameworks>net461;netstandard1.5</TargetFrameworks>
+    <AssemblyName>Platform.Hardware.Cpu</AssemblyName>
+    <PackageId>Platform.Hardware.Cpu</PackageId>
+    <PackageTags>LinksPlatform;Hardware.Cpu;CacheLine;false-sharing;concurrency;cache-line-size</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
+    <PackageProjectUrl>https://linksplatform.github.io/Hardware.Cpu</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/linksplatform/Hardware.Cpu</RepositoryUrl>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <LangVersion>Latest</LangVersion>
+    <PackageReleaseNotes>Initial code fork.</PackageReleaseNotes>
   </PropertyGroup>
+  
+  <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0-preview.2" PrivateAssets="All" />      
+  </ItemGroup>
+    
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
+  </ItemGroup>
 
 </Project>
