@@ -1,7 +1,6 @@
 [![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.Hardware.Cpu)](https://www.nuget.org/packages/Platform.Hardware.Cpu)
 [![Build Status](https://travis-ci.com/linksplatform/CacheLineSize.NET.svg?branch=master)](https://travis-ci.com/linksplatform/CacheLineSize.NET)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c07241e87f0a4441a8cd9664e0b6fadc)](https://app.codacy.com/app/drakonard/Hardware.Cpu?utm_source=github.com&utm_medium=referral&utm_content=linksplatform/Hardware.Cpu&utm_campaign=Badge_Grade_Dashboard)
-[![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/Hardware.Cpu/badge)](https://www.codefactor.io/repository/github/linksplatform/Hardware.Cpu)
+[![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/hardware.cpu/badge)](https://www.codefactor.io/repository/github/linksplatform/hardware.cpu)
 
 # [Hardware.Cpu](https://github.com/linksplatform/Hardware.Cpu)
 
