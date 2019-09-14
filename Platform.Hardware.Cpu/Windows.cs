@@ -24,7 +24,7 @@ namespace Platform.Hardware.Cpu
         struct PROCESSORCORE
         {
             public byte Flags;
-        };
+        }
 
         [StructLayout(LayoutKind.Sequential)]
         struct NUMANODE
