@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Hardware.Cpu.CacheLine.html",
-          "hash": "qnwIH4tkEu1EPdWIm/TgRA=="
+          "hash": "2jcq779qgkf/bJ9EdtnYAA=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Hardware.Cpu.Tests.Tests.html",
-          "hash": "uJLWrCuJI7laoplMc+PmLg=="
+          "hash": "s4D97nIxRFLamCWGPlqBbA=="
         }
       },
       "is_incremental": false,
