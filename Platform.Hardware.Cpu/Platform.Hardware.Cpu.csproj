@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Description>LinksPlatform's Platform.Hardware.Cpu Class Library</Description>
-    <Copyright>Konstantin Diachenko</Copyright>
+    <Copyright>Nick Strupat;Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Hardware.Cpu</AssemblyTitle>
     <VersionPrefix>0.0.1</VersionPrefix>
     <Authors>Nick Strupat;Konstantin Diachenko</Authors>
