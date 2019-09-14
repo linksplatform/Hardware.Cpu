@@ -1,11 +1,10 @@
-using NickStrupat;
 using Xunit;
 
-namespace CacheLineSize.NET
+namespace Platform.Hardware.Cpu.Tests
 {
-    public class Tests
+    public static class Tests
     {
         [Fact]
-        public void Test() => Assert.NotEqual(0, CacheLine.Size);
+        public static void Test() => Assert.NotEqual(0, CacheLine.Size);
     }
 }
