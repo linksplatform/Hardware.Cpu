@@ -48,9 +48,9 @@ class Program
 *   [Platform.Unsafe](https://github.com/linksplatform/Unsafe)
 
 ## See also
-- [NickStrupat/CacheLineSize.NET](https://github.com/NickStrupat/CacheLineSize.NET) for the equivalent .NET Standard library (without .NET Framework support)
-- [NickStrupat/CacheLineSize](https://github.com/NickStrupat/CacheLineSize) for the equivalent C function
-- [ulipollo/CacheLineSizeMex](https://github.com/ulipollo/CacheLineSizeMex) for the MATLAB function
+*   [NickStrupat/CacheLineSize.NET](https://github.com/NickStrupat/CacheLineSize.NET) for the equivalent .NET Standard library (without .NET Framework support)
+*   [NickStrupat/CacheLineSize](https://github.com/NickStrupat/CacheLineSize) for the equivalent C function
+*   [ulipollo/CacheLineSizeMex](https://github.com/ulipollo/CacheLineSizeMex) for the MATLAB function
 
 ## Mystery files
 *   [.travis.yml](https://github.com/linksplatform/Hardware.Cpu/blob/master/.travis.yml) - [Travis CI](https://travis-ci.com) build configuration.
