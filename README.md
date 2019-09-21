@@ -9,7 +9,7 @@ LinksPlatform's Platform.Hardware.Cpu Class Library.
 
 Namespace: [Platform.Hardware.Cpu](https://linksplatform.github.io/Hardware.Cpu/api/Platform.Hardware.Cpu.html)
 
-Forked from: [Konard/LinksPlatform/Platform/Platform.Helpers/Hardware.Cpu](https://github.com/Konard/LinksPlatform/tree/19902d5c6221b5c93a5e06849de28bb97edac5f8/Platform/Platform.Helpers/Hardware.Cpu)
+Forked from: [NickStrupat/CacheLineSize.NET](https://github.com/NickStrupat/CacheLineSize.NET)
 
 NuGet package: [Platform.Hardware.Cpu](https://www.nuget.org/packages/Platform.Hardware.Cpu)
 
