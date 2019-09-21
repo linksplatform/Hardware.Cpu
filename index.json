@@ -1,4 +1,9 @@
 {
+  "api/Platform.Hardware.Cpu.Tests.html": {
+    "href": "api/Platform.Hardware.Cpu.Tests.html",
+    "title": "Namespace Platform.Hardware.Cpu.Tests | LinksPlatform's Platform.Hardware.Cpu Library",
+    "keywords": "Namespace Platform.Hardware.Cpu.Tests Classes Tests"
+  },
   "README.html": {
     "href": "README.html",
     "title": "Hardware.Cpu | LinksPlatform's Platform.Hardware.Cpu Library",
@@ -9,19 +14,14 @@
     "title": "Class CacheLine | LinksPlatform's Platform.Hardware.Cpu Library",
     "keywords": "Class CacheLine Inheritance Object CacheLine Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Hardware.Cpu Assembly : Platform.Hardware.Cpu.dll Syntax public static class CacheLine Fields | Improve this Doc View Source Size Declaration public static readonly int Size Field Value Type Description Int32"
   },
-  "api/Platform.Hardware.Cpu.html": {
-    "href": "api/Platform.Hardware.Cpu.html",
-    "title": "Namespace Platform.Hardware.Cpu | LinksPlatform's Platform.Hardware.Cpu Library",
-    "keywords": "Namespace Platform.Hardware.Cpu Classes CacheLine"
-  },
   "api/Platform.Hardware.Cpu.Tests.Tests.html": {
     "href": "api/Platform.Hardware.Cpu.Tests.Tests.html",
     "title": "Class Tests | LinksPlatform's Platform.Hardware.Cpu Library",
     "keywords": "Class Tests Inheritance Object Tests Namespace : Platform.Hardware.Cpu.Tests Assembly : Platform.Hardware.Cpu.Tests.dll Syntax public static class Tests : object Methods | Improve this Doc View Source Test() Declaration public static void Test()"
   },
-  "api/Platform.Hardware.Cpu.Tests.html": {
-    "href": "api/Platform.Hardware.Cpu.Tests.html",
-    "title": "Namespace Platform.Hardware.Cpu.Tests | LinksPlatform's Platform.Hardware.Cpu Library",
-    "keywords": "Namespace Platform.Hardware.Cpu.Tests Classes Tests"
+  "api/Platform.Hardware.Cpu.html": {
+    "href": "api/Platform.Hardware.Cpu.html",
+    "title": "Namespace Platform.Hardware.Cpu | LinksPlatform's Platform.Hardware.Cpu Library",
+    "keywords": "Namespace Platform.Hardware.Cpu Classes CacheLine"
   }
 }
