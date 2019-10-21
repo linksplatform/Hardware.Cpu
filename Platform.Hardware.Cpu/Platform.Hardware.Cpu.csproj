@@ -9,7 +9,7 @@
     <TargetFrameworks>net471;netstandard2.0;netstandard2.0;netstandard2.1</TargetFrameworks>
     <AssemblyName>Platform.Hardware.Cpu</AssemblyName>
     <PackageId>Platform.Hardware.Cpu</PackageId>
-    <PackageTags>LinksPlatform;Hardware.Cpu;CacheLine;false-sharing;concurrency;cache-line-size</PackageTags>
+    <PackageTags>LinksPlatform;Hardware.Cpu;CacheLine;CacheLine.Size;false-sharing;concurrency</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
     <PackageProjectUrl>https://linksplatform.github.io/Hardware.Cpu</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
