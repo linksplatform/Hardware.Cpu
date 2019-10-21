@@ -1,9 +1,4 @@
 {
-  "api/Platform.Hardware.Cpu.html": {
-    "href": "api/Platform.Hardware.Cpu.html",
-    "title": "Namespace Platform.Hardware.Cpu | LinksPlatform's Platform.Hardware.Cpu Library",
-    "keywords": "Namespace Platform.Hardware.Cpu Classes CacheLine Contains constants related to CPUs cache line. Содержит константы, относящиеся к строке кэша ЦП."
-  },
   "README.html": {
     "href": "README.html",
     "title": "Hardware.Cpu | LinksPlatform's Platform.Hardware.Cpu Library",
@@ -13,6 +8,11 @@
     "href": "api/Platform.Hardware.Cpu.Tests.Tests.html",
     "title": "Class Tests | LinksPlatform's Platform.Hardware.Cpu Library",
     "keywords": "Class Tests Inheritance Object Tests Namespace : Platform.Hardware.Cpu.Tests Assembly : Platform.Hardware.Cpu.Tests.dll Syntax public static class Tests : object Methods | Improve this Doc View Source Test() Declaration public static void Test()"
+  },
+  "api/Platform.Hardware.Cpu.html": {
+    "href": "api/Platform.Hardware.Cpu.html",
+    "title": "Namespace Platform.Hardware.Cpu | LinksPlatform's Platform.Hardware.Cpu Library",
+    "keywords": "Namespace Platform.Hardware.Cpu Classes CacheLine Contains constants related to CPUs cache line. Содержит константы, относящиеся к строке кэша ЦП."
   },
   "api/Platform.Hardware.Cpu.CacheLine.html": {
     "href": "api/Platform.Hardware.Cpu.CacheLine.html",
