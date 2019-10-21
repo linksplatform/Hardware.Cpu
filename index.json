@@ -4,6 +4,16 @@
     "title": "Hardware.Cpu | LinksPlatform's Platform.Hardware.Cpu Library",
     "keywords": "Hardware.Cpu LinksPlatform's Platform.Hardware.Cpu Class Library. Namespace: Platform.Hardware.Cpu Forked from: NickStrupat/CacheLineSize.NET NuGet package: Platform.Hardware.Cpu Example using System; using Platform.Hardware.Cpu; class Program { static void Main(string[] args) { Console.WriteLine(CacheLine.Size); // Print the cache line size in bytes var array = new CacheLineAlignedArray<string>(10); Interlocked.Exchange(ref array[0], \"Hello\"); // All threads can now see the latest value at `array[0]` without risk of ruining performance with false-sharing // This can be used to build collections which share elements across threads at the fastest possible synchronization. } // An array-like type where each element is on it's own cache-line. This is a building block for avoiding false-sharing. public struct CacheLineAlignedArray<T> where T : class { private readonly T[] buffer; public CacheLineAlignedArray(Int32 size) => buffer = new T[Multiplier * size]; public Int32 Length => buffer.Length / Multiplier; public ref T this[Int32 index] => ref buffer[Multiplier * index]; private static readonly Int32 Multiplier = CacheLine.Size / IntPtr.Size; } } Documentation PDF file with code for e-readers. Dependent libraries Platform.Unsafe See also NickStrupat/CacheLineSize.NET for the equivalent .NET Standard library (without .NET Framework support) NickStrupat/CacheLineSize for the equivalent C function ulipollo/CacheLineSizeMex for the MATLAB function Mystery files docfx.json and toc.yml - DocFX build configuration. format-csharp-files.py - script for formatting .cs files as a part of tex file. format-document.sh - script for formatting tex file for generating PDF from it. generate-pdf.sh - script that generates PDF with code for e-readers. publish-docs.sh - script that publishes generated documentation and PDF with code for e-readers to gh-pages branch. publish-release.sh - script for publishing release of current package version on GitHub . push-nuget.sh - script for publishing current version of NuGet package."
   },
+  "api/Platform.Hardware.Cpu.CacheLine.html": {
+    "href": "api/Platform.Hardware.Cpu.CacheLine.html",
+    "title": "Class CacheLine | LinksPlatform's Platform.Hardware.Cpu Library",
+    "keywords": "Class CacheLine Contains constants related to CPUs cache line. Содержит константы, относящиеся к строке кэша ЦП. Inheritance Object CacheLine Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Hardware.Cpu Assembly : Platform.Hardware.Cpu.dll Syntax public static class CacheLine Fields | Improve this Doc View Source Size Gets the size of CPUs cache line in bytes. Получает размер строки кэша ЦП в байтах. Declaration public static readonly int Size Field Value Type Description Int32"
+  },
+  "api/Platform.Hardware.Cpu.Tests.html": {
+    "href": "api/Platform.Hardware.Cpu.Tests.html",
+    "title": "Namespace Platform.Hardware.Cpu.Tests | LinksPlatform's Platform.Hardware.Cpu Library",
+    "keywords": "Namespace Platform.Hardware.Cpu.Tests Classes Tests"
+  },
   "api/Platform.Hardware.Cpu.Tests.Tests.html": {
     "href": "api/Platform.Hardware.Cpu.Tests.Tests.html",
     "title": "Class Tests | LinksPlatform's Platform.Hardware.Cpu Library",
@@ -12,16 +22,6 @@
   "api/Platform.Hardware.Cpu.html": {
     "href": "api/Platform.Hardware.Cpu.html",
     "title": "Namespace Platform.Hardware.Cpu | LinksPlatform's Platform.Hardware.Cpu Library",
-    "keywords": "Namespace Platform.Hardware.Cpu Classes CacheLine"
-  },
-  "api/Platform.Hardware.Cpu.CacheLine.html": {
-    "href": "api/Platform.Hardware.Cpu.CacheLine.html",
-    "title": "Class CacheLine | LinksPlatform's Platform.Hardware.Cpu Library",
-    "keywords": "Class CacheLine Inheritance Object CacheLine Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Hardware.Cpu Assembly : Platform.Hardware.Cpu.dll Syntax public static class CacheLine Fields | Improve this Doc View Source Size Declaration public static readonly int Size Field Value Type Description Int32"
-  },
-  "api/Platform.Hardware.Cpu.Tests.html": {
-    "href": "api/Platform.Hardware.Cpu.Tests.html",
-    "title": "Namespace Platform.Hardware.Cpu.Tests | LinksPlatform's Platform.Hardware.Cpu Library",
-    "keywords": "Namespace Platform.Hardware.Cpu.Tests Classes Tests"
+    "keywords": "Namespace Platform.Hardware.Cpu Classes CacheLine Contains constants related to CPUs cache line. Содержит константы, относящиеся к строке кэша ЦП."
   }
 }
