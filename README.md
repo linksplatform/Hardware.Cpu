@@ -1,5 +1,5 @@
 [![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.Hardware.Cpu)](https://www.nuget.org/packages/Platform.Hardware.Cpu)
-[![Build Status](https://travis-ci.com/linksplatform/Hardware.Cpu.svg?branch=master)](https://travis-ci.com/linksplatform/Hardware.Cpu)
+[![Actions Status](https://github.com/linksplatform/Hardware.Cpu/workflows/CD/badge.svg)](https://github.com/linksplatform/Hardware.Cpu/actions?workflow=CD)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9c4395d5eb1a4c0eb578fe69abb109f2)](https://www.codacy.com/manual/drakonard/Hardware.Cpu?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=linksplatform/Hardware.Cpu&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/hardware.cpu/badge)](https://www.codefactor.io/repository/github/linksplatform/hardware.cpu)
 
@@ -55,10 +55,10 @@ class Program
 *   [ulipollo/CacheLineSizeMex](https://github.com/ulipollo/CacheLineSizeMex) for the MATLAB function
 
 ## Mystery files
-*   [.travis.yml](https://github.com/linksplatform/Hardware.Cpu/blob/master/.travis.yml) - [Travis CI](https://travis-ci.com) build configuration.
 *   [docfx.json](https://github.com/linksplatform/Hardware.Cpu/blob/master/docfx.json) and [toc.yml](https://github.com/linksplatform/Hardware.Cpu/blob/master/toc.yml) - [DocFX](https://dotnet.github.io/docfx) build configuration.
-*   [format-document.sh](https://github.com/linksplatform/Hardware.Cpu/blob/master/format-document.sh) - script for formatting `tex` file for generating PDF from it.
 *   [format-csharp-files.py](https://github.com/linksplatform/Hardware.Cpu/blob/master/format-csharp-files.py) - script for formatting `.cs` files as a part of `tex` file.
+*   [format-document.sh](https://github.com/linksplatform/Hardware.Cpu/blob/master/format-document.sh) - script for formatting `tex` file for generating PDF from it.
 *   [generate-pdf.sh](https://github.com/linksplatform/Hardware.Cpu/blob/master/generate-pdf.sh) - script that generates PDF with code for e-readers.
 *   [publish-docs.sh](https://github.com/linksplatform/Hardware.Cpu/blob/master/publish-docs.sh) - script that publishes generated documentation and PDF with code for e-readers to [gh-pages](https://github.com/linksplatform/Hardware.Cpu/tree/gh-pages) branch.
+*   [publish-release.sh](https://github.com/linksplatform/Hardware.Cpu/blob/master/publish-release.sh) - script for publishing release of current package version on [GitHub](https://github.com/).
 *   [push-nuget.sh](https://github.com/linksplatform/Hardware.Cpu/blob/master/push-nuget.sh) - script for publishing current version of [NuGet](https://www.nuget.org) package.
