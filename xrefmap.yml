@@ -19,28 +19,3 @@ references:
   commentId: F:Platform.Hardware.Cpu.CacheLine.Size
   fullName: Platform.Hardware.Cpu.CacheLine.Size
   nameWithType: CacheLine.Size
-- uid: Platform.Hardware.Cpu.Tests
-  name: Platform.Hardware.Cpu.Tests
-  href: api/Platform.Hardware.Cpu.Tests.html
-  commentId: N:Platform.Hardware.Cpu.Tests
-  fullName: Platform.Hardware.Cpu.Tests
-  nameWithType: Platform.Hardware.Cpu.Tests
-- uid: Platform.Hardware.Cpu.Tests.Tests
-  name: Tests
-  href: api/Platform.Hardware.Cpu.Tests.Tests.html
-  commentId: T:Platform.Hardware.Cpu.Tests.Tests
-  fullName: Platform.Hardware.Cpu.Tests.Tests
-  nameWithType: Tests
-- uid: Platform.Hardware.Cpu.Tests.Tests.Test
-  name: Test()
-  href: api/Platform.Hardware.Cpu.Tests.Tests.html#Platform_Hardware_Cpu_Tests_Tests_Test
-  commentId: M:Platform.Hardware.Cpu.Tests.Tests.Test
-  fullName: Platform.Hardware.Cpu.Tests.Tests.Test()
-  nameWithType: Tests.Test()
-- uid: Platform.Hardware.Cpu.Tests.Tests.Test*
-  name: Test
-  href: api/Platform.Hardware.Cpu.Tests.Tests.html#Platform_Hardware_Cpu_Tests_Tests_Test_
-  commentId: Overload:Platform.Hardware.Cpu.Tests.Tests.Test
-  isSpec: "True"
-  fullName: Platform.Hardware.Cpu.Tests.Tests.Test
-  nameWithType: Tests.Test
