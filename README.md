@@ -50,6 +50,6 @@ class Program
 *   [Platform.Unsafe](https://github.com/linksplatform/Unsafe)
 
 ## See also
-*   [NickStrupat/CacheLineSize.NET](https://github.com/NickStrupat/CacheLineSize.NET) for the equivalent .NET Standard library (without .NET Framework support)
+*   [NickStrupat/CacheLineSize.NET](https://github.com/NickStrupat/CacheLineSize.NET) for the equivalent .NET Standard 1.5 library (without .NET Framework support)
 *   [NickStrupat/CacheLineSize](https://github.com/NickStrupat/CacheLineSize) for the equivalent C function
 *   [ulipollo/CacheLineSizeMex](https://github.com/ulipollo/CacheLineSizeMex) for the MATLAB function
