@@ -12,6 +12,6 @@
   "api/Platform.Hardware.Cpu.CacheLine.html": {
     "href": "api/Platform.Hardware.Cpu.CacheLine.html",
     "title": "Class CacheLine | LinksPlatform's Platform.Hardware.Cpu Library",
-    "keywords": "Class CacheLine Contains constants related to CPUs cache line. Содержит константы, относящиеся к строке кэша ЦП. Inheritance Object CacheLine Inherited Members Object.Equals(Object) System.Object.Equals(System.Object, System.Object) Object.GetHashCode() Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) Object.ToString() Namespace : Platform.Hardware.Cpu Assembly : Platform.Hardware.Cpu.dll Syntax public static class CacheLine Fields | Improve this Doc View Source Size Gets the size of CPUs cache line in bytes. Получает размер строки кэша ЦП в байтах. Declaration public static readonly int Size Field Value Type Description Int32"
+    "keywords": "Class CacheLine Contains constants related to CPUs cache line. Содержит константы, относящиеся к строке кэша ЦП. Inheritance Object CacheLine Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Hardware.Cpu Assembly : Platform.Hardware.Cpu.dll Syntax public static class CacheLine Fields | Improve this Doc View Source Size Gets the size of CPUs cache line in bytes. Получает размер строки кэша ЦП в байтах. Declaration public static readonly int Size Field Value Type Description Int32"
   }
 }
