@@ -6,7 +6,7 @@
     <AssemblyTitle>Platform.Hardware.Cpu</AssemblyTitle>
     <VersionPrefix>0.0.3</VersionPrefix>
     <Authors>Nick Strupat;Konstantin Diachenko</Authors>
-    <TargetFrameworks>net471;netstandard2.0;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1</TargetFrameworks>
     <AssemblyName>Platform.Hardware.Cpu</AssemblyName>
     <PackageId>Platform.Hardware.Cpu</PackageId>
     <PackageTags>LinksPlatform;Hardware.Cpu;CacheLine;CacheLine.Size;false-sharing;concurrency</PackageTags>
