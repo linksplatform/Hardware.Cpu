@@ -1,21 +1,3 @@
 ### YamlMime:XRefMap
 sorted: true
-references:
-- uid: Platform.Hardware.Cpu
-  name: Platform.Hardware.Cpu
-  href: api/Platform.Hardware.Cpu.html
-  commentId: N:Platform.Hardware.Cpu
-  fullName: Platform.Hardware.Cpu
-  nameWithType: Platform.Hardware.Cpu
-- uid: Platform.Hardware.Cpu.CacheLine
-  name: CacheLine
-  href: api/Platform.Hardware.Cpu.CacheLine.html
-  commentId: T:Platform.Hardware.Cpu.CacheLine
-  fullName: Platform.Hardware.Cpu.CacheLine
-  nameWithType: CacheLine
-- uid: Platform.Hardware.Cpu.CacheLine.Size
-  name: Size
-  href: api/Platform.Hardware.Cpu.CacheLine.html#Platform_Hardware_Cpu_CacheLine_Size
-  commentId: F:Platform.Hardware.Cpu.CacheLine.Size
-  fullName: Platform.Hardware.Cpu.CacheLine.Size
-  nameWithType: CacheLine.Size
+references: []

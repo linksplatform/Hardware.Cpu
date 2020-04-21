@@ -18,43 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "3FcGy+7u03VialG0HMSGLA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Hardware.Cpu.CacheLine.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Hardware.Cpu.CacheLine.html",
-          "hash": "Ke3HLZUuCwOxagA/MqDKMw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Hardware.Cpu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Hardware.Cpu.html",
-          "hash": "FF8wKIuFVKoJsAxsXHR8dg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "obj/api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "EGcCWPooJf/ScrJ3DURlBA=="
+          "hash": "iEVvOSYGUpiP5zxc/1qb6A=="
         }
       },
       "is_incremental": false,
@@ -69,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "HBXjgSEsTB+O5s+GM+UCwA=="
+          "hash": "SkCWKhgmKK9ITiE46MhoLw=="
         }
       },
       "is_incremental": false,
@@ -91,12 +55,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 1,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 2,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
