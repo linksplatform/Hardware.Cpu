@@ -7,7 +7,7 @@
 
 LinksPlatform's Platform.Hardware.Cpu Class Library.
 
-Namespace: [Platform.Hardware.Cpu](https://linksplatform.github.io/Hardware.Cpu/api/Platform.Hardware.Cpu.html)
+Namespace: [Platform.Hardware.Cpu](https://linksplatform.github.io/Hardware.Cpu/csharp/api/Platform.Hardware.Cpu.html)
 
 Forked from: [NickStrupat/CacheLineSize.NET](https://github.com/NickStrupat/CacheLineSize.NET)
 
@@ -44,7 +44,7 @@ class Program
 ```
 
 ## [Documentation](https://linksplatform.github.io/Hardware.Cpu)
-[PDF file](https://linksplatform.github.io/Hardware.Cpu/Platform.Hardware.Cpu.pdf) with code for e-readers.
+[PDF file](https://linksplatform.github.io/Hardware.Cpu/csharp/Platform.Hardware.Cpu.pdf) with code for e-readers.
 
 ## Dependent libraries
 *   [Platform.Unsafe](https://github.com/linksplatform/Unsafe)
