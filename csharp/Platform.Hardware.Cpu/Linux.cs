@@ -42,12 +42,6 @@ namespace Platform.Hardware.Cpu
         [DllImport("libc")]
         private static extern Int64 sysconf(Int32 name);
 
-        /// <summary>
-        /// <para>
-        /// The sc level1 dcache linesize.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         private const Int32 _SC_LEVEL1_DCACHE_LINESIZE = 190;
     }
 }
