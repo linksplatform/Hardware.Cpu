@@ -263,6 +263,12 @@ namespace Platform.Hardware.Cpu
             RelationAll = 0xffff
         }
 
+        /// <summary>
+        /// <para>
+        /// The system logical processor information.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private struct SYSTEM_LOGICAL_PROCESSOR_INFORMATION
         {
             /// <summary>
@@ -309,8 +315,24 @@ namespace Platform.Hardware.Cpu
         [DllImport(@"kernel32.dll", SetLastError = true)]
         private static extern bool GetLogicalProcessorInformation(IntPtr Buffer, ref UInt32 ReturnLength);
 
+        /// <summary>
+        /// <para>
+        /// The error insufficient buffer.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const int ERROR_INSUFFICIENT_BUFFER = 122;
 
+        /// <summary>
+        /// <para>
+        /// Manageds the get logical processor information.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <returns>
+        /// <para>The system logical processor information array</para>
+        /// <para></para>
+        /// </returns>
         private static SYSTEM_LOGICAL_PROCESSOR_INFORMATION[] ManagedGetLogicalProcessorInformation()
         {
             var ReturnLength = 0u;
