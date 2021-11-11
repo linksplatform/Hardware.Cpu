@@ -14,6 +14,21 @@ namespace Platform.Hardware.Cpu
         /// <para>Получает размер строки кэша ЦП в байтах.</para>
         /// </summary>
         public static readonly int Size = GetSize();
+
+        /// <summary>
+        /// <para>
+        /// Gets the size.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <exception cref="NotSupportedException">
+        /// <para>Unrecognized OS platform.</para>
+        /// <para></para>
+        /// </exception>
+        /// <returns>
+        /// <para>The int</para>
+        /// <para></para>
+        /// </returns>
         private static int GetSize()
         {
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
