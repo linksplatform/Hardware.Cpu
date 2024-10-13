@@ -1,4 +1,4 @@
-[![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.Hardware.Cpu)](https://www.nuget.org/packages/Platform.Hardware.Cpu)
+[![NuGet Version and Downloads count](https://img.shields.io/nuget/v/Platform.Hardware.Cpu?label=nuget&style=flat)](https://www.nuget.org/packages/Platform.Hardware.Cpu)
 [![Actions Status](https://github.com/linksplatform/Hardware.Cpu/workflows/CD/badge.svg)](https://github.com/linksplatform/Hardware.Cpu/actions?workflow=CD)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9c4395d5eb1a4c0eb578fe69abb109f2)](https://www.codacy.com/manual/drakonard/Hardware.Cpu?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=linksplatform/Hardware.Cpu&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/hardware.cpu/badge)](https://www.codefactor.io/repository/github/linksplatform/hardware.cpu)
