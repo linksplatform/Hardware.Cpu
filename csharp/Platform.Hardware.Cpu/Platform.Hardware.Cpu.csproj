@@ -6,7 +6,7 @@
     <AssemblyTitle>Platform.Hardware.Cpu</AssemblyTitle>
     <VersionPrefix>0.1.0</VersionPrefix>
     <Authors>Nick Strupat;Konstantin Diachenko</Authors>
-    <TargetFramework>net7</TargetFramework>
+    <TargetFramework>net8</TargetFramework>
     <AssemblyName>Platform.Hardware.Cpu</AssemblyName>
     <PackageId>Platform.Hardware.Cpu</PackageId>
     <PackageTags>LinksPlatform;Hardware.Cpu;CacheLine;CacheLine.Size;false-sharing;concurrency</PackageTags>
@@ -23,8 +23,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Lowest supported version of .NET Framework is now 4.7.2.
-Issues fix.</PackageReleaseNotes>
+    <PackageReleaseNotes>Update target framework from net7 to net8.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
   
